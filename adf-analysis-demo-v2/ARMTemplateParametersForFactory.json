@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-analysis-demo-v2"
+		},
+		"AzureBlobStorage_conn_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_conn_connectionString": {
+			"value": ""
+		},
+		"Conn_AzureBlobStorage_connectionString": {
+			"value": ""
+		},
+		"address_test_conn_connectionString": {
+			"value": ""
+		}
+	}
+}
