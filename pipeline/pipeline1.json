@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy Data1",
+				"name": "Copy_Address_to_Stage",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -34,7 +34,7 @@
 						"mappings": [
 							{
 								"source": {
-									"type": "Int16",
+									"type": "String",
 									"ordinal": 1
 								},
 								"sink": {
@@ -74,7 +74,7 @@
 							},
 							{
 								"source": {
-									"type": "Int16",
+									"type": "String",
 									"ordinal": 5
 								},
 								"sink": {
@@ -132,7 +132,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable1_target",
+						"referenceName": "Conn_AzureSqlTable",
 						"type": "DatasetReference"
 					}
 				]
