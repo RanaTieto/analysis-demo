@@ -19,7 +19,8 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"recursive": true
+							"recursive": false,
+							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
@@ -39,7 +40,7 @@
 								},
 								"sink": {
 									"name": "AddressID",
-									"type": "Int32"
+									"type": "String"
 								}
 							},
 							{
@@ -79,7 +80,7 @@
 								},
 								"sink": {
 									"name": "StateProvinceID",
-									"type": "Int32"
+									"type": "String"
 								}
 							},
 							{
@@ -98,7 +99,8 @@
 									"ordinal": 7
 								},
 								"sink": {
-									"name": "SpatialLocation"
+									"name": "SpatialLocation",
+									"type": "String"
 								}
 							},
 							{
@@ -108,7 +110,7 @@
 								},
 								"sink": {
 									"name": "rowguid",
-									"type": "Guid"
+									"type": "String"
 								}
 							},
 							{
@@ -118,7 +120,7 @@
 								},
 								"sink": {
 									"name": "ModifiedDate",
-									"type": "DateTime"
+									"type": "String"
 								}
 							}
 						]
